@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.sparkvirus.kshem.efood.com.sparkvirus.kshem.food.MenuActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:background="#606060"
+            android:src="@drawable/logo" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:paddingTop="10dp">
+
+        <ExpandableListView
+            android:id="@+id/menulist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:divider="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_refresh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pending Orders" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_confirmorder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Confirm Order" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

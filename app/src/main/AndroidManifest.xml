@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sparkvirus.kshem.food">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconefood"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconefood"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.sparkvirus.kshem.food.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sparkvirus.kshem.food.LoginActivity"
+            android:parentActivityName="com.sparkvirus.kshem.food.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sparkvirus.kshem.food.SignupActivity"
+            android:parentActivityName="com.sparkvirus.kshem.food.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sparkvirus.kshem.food.OrderActivity"
+            android:parentActivityName="com.sparkvirus.kshem.food.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sparkvirus.kshem.food.InfoAcivity"
+            android:parentActivityName="com.sparkvirus.kshem.food.SignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sparkvirus.kshem.food.SettingsActivity"></activity>
+    </application>
+
+</manifest>

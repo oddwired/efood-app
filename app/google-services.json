@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "808598219430",
+    "firebase_url": "https://efood-bd0a6.firebaseio.com",
+    "project_id": "efood-bd0a6",
+    "storage_bucket": "efood-bd0a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808598219430:android:ce9b5e03063ebcd2",
+        "android_client_info": {
+          "package_name": "com.sparkvirus.kshem.food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808598219430-78ud7id1r8g6jqrcg0jv8bn8bucnffl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sparkvirus.kshem.food",
+            "certificate_hash": "e35379e55b921a54877bf45fa2a8bcd3676ea414"
+          }
+        },
+        {
+          "client_id": "808598219430-i500nsm61pak4jj2pg60g3pguodbhunh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf_pTvHKny6kwQKGoD2oVPDCNWua1cbRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808598219430-i500nsm61pak4jj2pg60g3pguodbhunh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
